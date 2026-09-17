@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Online | Cozy Cup Café</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Cozy Cup Café</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order Online</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="order-page">
+
+            <div class="page-heading">
+                <h2>Order Online</h2>
+                <p>Choose your favorite items and place your pickup order.</p>
+            </div>
+
+            <form class="order-form">
+
+                <div class="form-group">
+                    <label for="customer-name">Name</label>
+
+                    <input
+                        type="text"
+                        id="customer-name"
+                        name="customer-name"
+                        placeholder="Enter your name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="item">Choose an Item</label>
+
+                    <select id="item" name="item" required>
+                        <option value="">Select an item</option>
+                        <option value="latte">Vanilla Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="coffee">Fresh Brewed Coffee</option>
+                        <option value="muffin">Blueberry Muffin</option>
+                        <option value="croissant">Butter Croissant</option>
+                        <option value="avocado-toast">Avocado Toast</option>
+                        <option value="bagel">Bagel with Cream Cheese</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+
+                    <input
+                        type="number"
+                        id="quantity"
+                        name="quantity"
+                        min="1"
+                        value="1"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pickup-time">Pickup Time</label>
+
+                    <input
+                        type="time"
+                        id="pickup-time"
+                        name="pickup-time"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Special Instructions</label>
+
+                    <textarea
+                        id="notes"
+                        name="notes"
+                        rows="4"
+                        placeholder="Example: No sugar, extra hot..."></textarea>
+                </div>
+
+                <button type="submit" class="order-submit-button">
+                    Place Order
+                </button>
+
+                <div id="order-summary">
+                    <h3>Order Summary</h3>
+                    <p id="order-details"></p>
+                    <p id="order-total"></p>
+                    <p id="order-message"></p>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 Cozy Cup Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

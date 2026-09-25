@@ -1,4 +1,7 @@
 const orderForm = document.querySelector(".order-form");
+
+if (orderForm) {
+
 orderForm.addEventListener("submit", function(event) { event.preventDefault();
 
    const selectedItem = document.querySelector("#item").value; 
@@ -39,3 +42,20 @@ orderForm.addEventListener("submit", function(event) { event.preventDefault();
     document.querySelector("#order-message").textContent =
         "Thank you, " + customerName + "! Your order has been received.";
 });
+
+}
+
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const contactName = document.querySelector("#contact-name").value;
+
+        document.querySelector("#contact-message").textContent =
+            "Thank you, " + contactName + "! Your message has been sent.";
+    });
+
+}

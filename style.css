@@ -364,6 +364,12 @@ footer p {
     color: #6f4e37;
 }
 
+#contact-message {
+    margin-top: 15px;
+    color: #6f4e37;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
@@ -421,4 +427,6 @@ footer p {
         font-size: 16px;
     }
 
+    
 }
+
